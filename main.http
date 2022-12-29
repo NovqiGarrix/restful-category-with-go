@@ -1,0 +1,30 @@
+### GET HealthCheck
+GET http://localhost:4000/health
+
+### GET All Categories
+GET http://localhost:4000/api/categories
+
+### GET A category
+GET http://localhost:4000/api/categories/10
+
+### POST Create a new category
+POST http://localhost:4000/api/categories
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Tools"
+}
+
+### PUT Update a category
+PUT http://localhost:4000/api/categories/1
+Accept: application/json
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Gadget"
+}
+
+### Delete a category
+DELETE http://localhost:4000/api/categories/4
